@@ -8,12 +8,81 @@
 </head>
 <body>
 <div class="container p-3">
-    <div class="row">
-        <div class="col-6">
-            test
+    <div class="col-12">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control"
+                   placeholder="account Name"
+                   aria-label="account Name"
+                   id="accountName"
+                   aria-describedby="account Name">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="getInfo()">검색
+                </button>
+            </div>
         </div>
-        <div class="col-6">
-            test1
+    </div>
+    <div class="col-12" style="display: none" id="accountBox">
+        <h3 class="col-12 text-center" id="account">
+        </h3>
+        <div class="col-12 row">
+            <div class="col-6">
+                <div class="form-group row">
+                    <div class="col-sm-2">Total</div>
+                    <div class="col-sm-10" id="total">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2">Unstake</div>
+                    <div class="col-sm-10" id="unstake">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div for="stake" class="col-sm-2">Stake</div>
+                    <div class="col-sm-10" id="stake">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2">Refund</div>
+                    <div class="col-sm-10" id="refund">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div for="cpu" class="col-sm-2">Cpu</div>
+                    <div class="col-sm-10" id="cpu">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2">Net</div>
+                    <div class="col-sm-10" id="net">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2">RAM</div>
+                    <div class="col-sm-10" id="ram">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="to">TO</label>
+                    <input type="text" class="form-control" id="to" aria-describedby="to" placeholder="TO">
+                </div>
+                <div class="form-group">
+                    <label for="quantity">수량</label>
+                    <input type="number" class="form-control" id="quantity" aria-describedby="quantity"
+                           placeholder="수량">
+                </div>
+                <div class="form-group">
+                    <label for="memo">메모</label>
+                    <textarea class="form-control" id="memo" aria-describedby="memo" placeholder="메모"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="privateKey">Private Key</label>
+                    <input type="password" class="form-control" id="privateKey" aria-describedby="privateKey"
+                           placeholder="Private Key">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg btn-block">전송</button>
+            </div>
         </div>
     </div>
 </div>
