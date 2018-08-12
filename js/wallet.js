@@ -28,7 +28,5 @@ function getInfo() {
         document.getElementById('cpu').innerHTML = `${account.cpu_limit.used}up / ${account.cpu_limit.max}up (${totalResources.cpu_weight})`;
         document.getElementById('net').innerHTML = `${account.net_limit.used}byte / ${account.net_limit.max}byte (${totalResources.net_weight})`;
         document.getElementById('ram').innerHTML = `${account.ram_usage}byte / ${account.ram_quota}byte`;
-    }).catch(e => {
-
     });
 }
