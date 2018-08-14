@@ -81,9 +81,17 @@
                     <input type="password" class="form-control" id="privateKey" aria-describedby="privateKey"
                            placeholder="Private Key">
                 </div>
-                <button type="button" class="btn btn-primary btn-lg btn-block">전송</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="send()">전송</button>
             </div>
         </div>
+    </div>
+    <div class="col-12 text-danger" style="display: none" id="error">
+        <h5>Error</h5>
+        <div id="errorText"></div>
+    </div>
+    <div class="col-12 text-success" style="display: none" id="success">
+        <h5>Success</h5>
+        <div id="transaction"></div>
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/eosjs@16.0.0/lib/eos.min.js"
